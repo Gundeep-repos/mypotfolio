@@ -15,25 +15,26 @@ import './App.css';
 class App extends Component{
   render(){
     return(
-      <Router>
+      // <Router>
       <div className="App">
          
         <Header branding ="Welcome Guest"/>
         
         <div className="container">
-        <Switch>  
-         <Route exact path="/">
+        {/* <Switch>  
+         <Route exact path="/"> */}
         <MyPortfolioMain name = "Gundeep Singh"/>
         <TechnicalSkills/>
         <Education/>
         <Experience/>
-        </Route> 
+        <Projects/>
+        {/* </Route> 
         <Route exact path = '/projects' component = {Projects}/>
-        </Switch>
+        </Switch> */}
         </div>
         
       </div>
-      </Router>
+      // {/* </Router> */}
     )
   }
 }
